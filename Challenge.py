@@ -37,3 +37,15 @@ hitung = pembeli * diskon
 total = pembeli - hitung
 print("diskon :",hitung)
 print("harga setelah diskon :", total)
+
+#Challenge 5
+for i in range(2,41):
+    if i == 10:
+        print("ini adalah nilai",i)
+        continue
+    elif i == 20:
+        print("ini adalah nilai",i)
+        continue
+    elif i == 30:
+        print("ini adalah nilai",i)
+        break
