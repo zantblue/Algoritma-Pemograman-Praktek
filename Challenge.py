@@ -1,4 +1,12 @@
 ##Challenge 1
+tinggi = 10
+alas = 5
+Luas = alas * tinggi 
+
+tinggi = int (input("tinggi : "))
+alas = int (input("alas : "))
+Luas = tinggi * alas /2
+print("Luas",Luas)
 
 ##Challenge 2
 sisiAtas = input("masukan sisiAtas :")
