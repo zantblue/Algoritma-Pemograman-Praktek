@@ -57,3 +57,27 @@ for i in range(2,41):
     elif i == 30:
         print("ini adalah nilai",i)
         break
+#Challenge 6
+def luasSegitiga():
+    alas = int(input("Masukkan panjang alas = "))
+    tinggi = int(input("Masukkan panjang tinggi = "))
+    luas = alas * tinggi /2
+    print(f"Luas Segitiga adalah {luas}")
+
+def luasLingkaran():
+    jari = int(input("Masukkan panjang jari-jari = "))
+    luas = 3.14 * jari * jari
+    print(f"Luas Lingkaran adalah {luas}")
+
+def luasPersegi():
+    sisi = int(input("Masukkan panjang sisi = "))
+    luas = sisi * sisi 
+    print("Luas persegi adalah", luas)
+
+pilih = int(input(" Bagun datar \n[1] Luas segitiga\n[2] Luas lingkaran\n[3] Luas Persegi\n[>]Pilih bangun datar :"))
+if pilih == 1:
+    luasSegitiga()
+elif pilih == 2:
+    luasLingkaran()
+elif pilih == 3:
+    luasPersegi()
