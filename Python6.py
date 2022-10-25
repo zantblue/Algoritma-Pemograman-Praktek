@@ -33,6 +33,8 @@ data.remove("udin")
 
 dataAngka = [10,20,40,50,60,30]
 #Sort (Mengurutkan dari yang terkecil ke yg terbesar)
+
+#Next : Slicing
 dataAngka.sort()
 print(dataAngka)
 #Reverse (Mengurutkan dari yang terbesar ke yg terkecil)
