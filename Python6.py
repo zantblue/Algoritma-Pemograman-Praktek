@@ -22,3 +22,19 @@ print(data)
 #Extend (Menambahkan list di dalam list)
 data_baru = [10,20,30,True]
 data.extend(data_baru)
+#Mengedit data 
+data_ubah = data[1]  = "Biden"
+print(data)
+
+#Menghapus data
+#remove 
+data.remove("rido")
+data.remove("udin")
+
+dataAngka = [10,20,40,50,60,30]
+#Sort (Mengurutkan dari yang terkecil ke yg terbesar)
+dataAngka.sort()
+print(dataAngka)
+#Reverse (Mengurutkan dari yang terbesar ke yg terkecil)
+dataAngka.reverse()
+print(dataAngka)
