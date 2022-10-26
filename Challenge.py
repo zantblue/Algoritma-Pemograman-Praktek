@@ -81,7 +81,7 @@ elif pilih == 2:
     luasLingkaran()
 elif pilih == 3:
     luasPersegi()
-    
+
 #Challenge 6
     #mencari data berdasarkan nim, nim berdasarkan imputan dari user
 dataNIM = int(input("Masukan NIM yang anda cari :"))
