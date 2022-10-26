@@ -50,3 +50,19 @@ SlicingData = data[1:2] #index awal : index setelahnya
 SlicingDataAwalSampaiAkhir = data[1:] #Data awal sampai data akhir
 SlicingBatasDataAkhir = data[:3] #kasih data sampai akhir
 print(data[:3])
+
+
+#List 2D 
+data = [
+    ["5220411093","Mizard"],
+    ["5220411112","kevina"],
+    ["5220411080","Daniel"],
+]
+print(data)
+for i in data:
+    print(i[2])
+
+z = 0 
+while z < len(data):
+    print(data[z][0])
+    z = z+1
