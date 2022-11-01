@@ -1,6 +1,5 @@
 data =[]
 def inputList():
-    global data
     inputNIM = input("Masukkan data NIM : ")
     inputNama = input("Masukkan data nama : ")
     dataBaru =[]
@@ -18,7 +17,6 @@ def cariList():
         print("Data yang Anda cari tidak ditemukan")
 
 def liatList():
-    global data
     for i in data:
         print("="*10)
         print(i)
