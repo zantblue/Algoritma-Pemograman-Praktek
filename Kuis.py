@@ -1,4 +1,3 @@
-import os
 dataMaster = []
 
 def inputData():
@@ -34,6 +33,7 @@ def SemuaData():
             print("Nilai Matematika : ",i[3])
             print("Nilai Agama : ",i[4])
             print("="*30)
+
 def tampilNPM():
     if dataMaster == []:
         print("Data Masih Belum tersedia")
@@ -49,8 +49,8 @@ def tampilNPM():
                 print("Nilai Agama : ",i[4])
                 print("="*30)
                 break
-            else:
-                print("NPM yang anda cari tidak ada")
+        else:
+            print("NPM yang anda cari tidak ada")
 
 def tampilNilai():
     if dataMaster == []:
@@ -58,8 +58,8 @@ def tampilNilai():
     else:
         print("="*30)
         print("1. Nilai Alpro")
-        print("1. Nilai Matematika")
-        print("1. Nilai Agama")
+        print("2. Nilai Matematika")
+        print("3. Nilai Agama")
         pilih = input("Pilih Nilai yang Ingin dicari Datanya : ")
         if pilih == "1":
             nama = "Nilai Alpro"
@@ -72,14 +72,10 @@ def tampilNilai():
 
         pilih = int(pilih)
         for i in dataMaster:
-            if i[1] == nama:
                 print("Nama : ",i[0])
                 print("NPM : ",i[1])
-                print("Nilai Alpro : ",i[pilih+1])
+                print(nama, " : ",i[pilih+1])
                 print("="*30)
-                break
-            else:
-                print("NPM yang anda cari tidak ada")
 
 def tampilNama():
     if dataMaster == []:
@@ -122,9 +118,9 @@ def cariNama():
         print("Data Masih Belum tersedia")
     else:
         print("="*30)
-        NIM = input("Masukkan NPM yang Ingin Dicari Datanya: ")
+        nama = input("Masukkan Nama yang Ingin Dicari Datanya: ")
         for i in dataMaster:
-            if i[1] == NIM:
+            if i[0] == nama:
                 print("="*30)
                 print("Nama : ",i[0])
                 print("NPM : ",i[1])
@@ -134,14 +130,14 @@ def cariNama():
                 print("="*30)
                 break
             else:
-                print("NPM yang anda cari tidak ada")
+                print("Nama yang anda cari tidak ada")
 
 def hapusData():
     if dataMaster == []:
         print("Data Masih Belum tersedia")
     else:
         print("="*30)
-        NIM = input("Masukkan NPM yang Ingin Dicari Datanya: ")
+        NIM = input("Masukkan NPM yang Ingin Dihapus : ")
         for i in dataMaster:
             if i[1] == NIM:
                 dataMaster.remove(i)
@@ -156,7 +152,7 @@ def editData():
         print("Data Masih Belum tersedia")
     else:
         print("="*30)
-        NIM = input("Masukkan NPM yang Datanya ingin dicari : ")
+        NIM = input("Masukkan NPM yang Datanya ingin diedit : ")
         for i in dataMaster:
             if i[1] == NIM:
                 print("="*30)
