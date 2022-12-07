@@ -98,3 +98,22 @@ for i in data:
     if i[0] == dataNIM:
         print(i)
         break
+
+#Challenge 9
+import numpy as np
+
+data1 = (10,'mizard',20,30,40)
+data2 = ('5220411093',50,60,70,80,90)
+#data3 = np.array([50,60,70,80,90])
+a = data1 [0:1]
+b = data1 [2:]
+c = data2 [1:5]
+angka1 = np.array(a+b)
+angka2 = np.array(c)
+hasil = angka1 + angka2
+
+#Hasil = data2[2], data2[4], data2[5]+data1[0], data2[5]+data1[3] 
+#+ data2[1], data2[4], data1[0] + data2[6]
+print("Nama :",data1[1])
+print("NIM :",data2[0])
+print("Result :",hasil)
