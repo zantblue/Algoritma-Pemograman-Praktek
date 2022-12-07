@@ -46,7 +46,7 @@ total = pembeli - hitung
 print("diskon :",hitung)
 print("harga setelah diskon :", total)
 
-#Challenge 5
+##Challenge 5
 for i in range(2,41):
     if i == 10:
         print("ini adalah nilai",i)
@@ -57,6 +57,7 @@ for i in range(2,41):
     elif i == 30:
         print("ini adalah nilai",i)
         break
+        
 #Challenge 6
 def luasSegitiga():
     alas = int(input("Masukkan panjang alas = "))
@@ -82,23 +83,6 @@ elif pilih == 2:
 elif pilih == 3:
     luasPersegi()
 
-#Challenge 6
-    #mencari data berdasarkan nim, nim berdasarkan imputan dari user
-dataNIM = int(input("Masukan NIM yang anda cari :"))
-
-data = [
-        [500411291, "Faiz"],
-        [500411292, "Nazhir"],
-        [500411293, "Amrulloh"],
-        [500411294, "Reza"],
-        [500411295, "Saputra"]
-]
-        
-for i in data:
-    if i[0] == dataNIM:
-        print(i)
-        break
-
 #Challenge 9
 import numpy as np
 
@@ -117,3 +101,32 @@ hasil = angka1 + angka2
 print("Nama :",data1[1])
 print("NIM :",data2[0])
 print("Result :",hasil)
+
+##Challenge10
+import numpy as np
+
+data1 = (1,2,3,4,'mizard',"5220411093",5,6,7,8,9,10)
+data2 = (11,'18',12,13,14,15,16,17,18,19,20)
+a = data1 [0:4]
+b = data1 [6:]
+c = data2 [0:1]
+d = data2 [2:]
+genap =[]
+ganjil = []
+angka1 = a+b
+angka2 = c+d
+hasil = angka1 + angka2
+
+
+for i in hasil:
+    if i %2 == 0:
+        genap.append(i)
+    
+    else:
+        ganjil.append(i)
+        
+print("Nama :",data1[4])
+print("NIM :",data2[5])
+print("umur :",data2[1])
+print(len(genap))
+print(len(ganjil))
