@@ -33,16 +33,18 @@ hasil = data1 * data2
 print(hasil)
 #print(data1[1])
 
-
+## Challenge
 import numpy as np
 
 data1 = (10,'mizard',20,30,40)
 data2 = ('5220411093',50,60,70,80,90)
 #data3 = np.array([50,60,70,80,90])
-a = np.array([10,20,30,40])
-b = np.array([50,60,70,80,90])
-hasil = a + b
-
+a = data1 [0:1]
+b = data1 [2:]
+c = data2 [1:5]
+angka1 = np.array(a+b)
+angka2 = np.array(c)
+hasil = angka1 + angka2
 
 #Hasil = data2[2], data2[4], data2[5]+data1[0], data2[5]+data1[3] 
 #+ data2[1], data2[4], data1[0] + data2[6]
