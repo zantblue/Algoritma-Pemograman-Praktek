@@ -117,11 +117,9 @@ angka1 = a+b
 angka2 = c+d
 hasil = angka1 + angka2
 
-
 for i in hasil:
     if i %2 == 0:
-        genap.append(i)
-    
+        genap.append(i) 
     else:
         ganjil.append(i)
         
