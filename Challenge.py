@@ -140,9 +140,6 @@ db = mysql.connector.connect(
     database = "db_mahasiswa",
 )
 myCursor = db.cursor()
-# sql = "SELECT * FROM tb_data"
-# myCursor.execute(sql)
-# result = myCursor.fetchall()
 data = []
 def mahasiswa():
     Nama = input("masukan Nama Anda : ")
